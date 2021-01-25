@@ -5,7 +5,7 @@
 */
 function challengeOne(viewIndex) {
     let picture;
-
+    picture = model.challengeOne;
 
     // Ikke rør det her vvv
     model.viewArray[viewIndex].picture = picture;
@@ -19,7 +19,7 @@ function challengeOne(viewIndex) {
 // Det finnes right picture og det finnes wrong pictures. Finn fram til right picture
 function challengeTwo(viewIndex) {
     let picture;
-
+    picture = model.challengeTwo.pictureTwo;
 
     // Ikke rør det her vvv
     model.viewArray[viewIndex].picture = picture;
@@ -35,7 +35,9 @@ function challengeThree(viewIndex) {
     // Bare hyggelig! jeg har funnet indexen for deg :)
     let index = model.values.challengeThreeIndex;
     let picture;
-
+    for (let i = 0; i < model.challengeThree[index].length; i++) {
+        picture = model.challengeThree[index];
+    }
 
 
     // Ikke rør det her vvv
@@ -51,7 +53,9 @@ function challengeThree(viewIndex) {
 // Nå begynner det å dra seg til. prøv å bruke ID til å finne riktig index i lista.
 function challengeFour(viewIndex) {
     let picture;
-    
+    for (let viewIndex = 1; viewIndex < model.challengeFour[index].length; i++) {
+        
+    }
 
     // Ikke rør det her vvv
     model.viewArray[viewIndex].picture = picture;
